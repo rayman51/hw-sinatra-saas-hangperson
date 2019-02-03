@@ -6,19 +6,19 @@
 
 <div class="alert alert-warning">
   <p class="lead">
-    Wrong Guesses:
+   Letters Used :
     <span class="guesses"><%= @game.wrong_guesses %></span>
   </p>
 </div>
 
 <p class="alert alert-success">
-  Word so far:
+  Word so far :
   <span class="word"><%= @game.word_with_guesses %></span>
 </p>
 
 <form action="/guess" method="post">
   <div class="form-group row">
-    <label for="guess" class="col-md-2 col-form-label">Guess a letter:</label>
+    <label for="guess" class="col-md-2 col-form-label">    Guess a letter: </label>
     <input type="text" name="guess" autocomplete="off"
            class="form-control col-md-1"/>
            
